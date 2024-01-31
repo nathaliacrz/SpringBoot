@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @SpringBootApplication
 @RestController
-public class VendasApplication {
+public class SaleApplication {
 
     @GetMapping("/hello")
     public String helloWorld() {
         return "Hello World";
     }
     public static void main(String[] args) {
-        SpringApplication.run(VendasApplication.class, args);
+        SpringApplication.run(SaleApplication.class, args);
     }
 }
