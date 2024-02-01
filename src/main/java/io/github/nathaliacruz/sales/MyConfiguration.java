@@ -4,6 +4,7 @@
  */
 package io.github.nathaliacruz.sales;
 
+import io.github.nathaliacruz.sales.service.DevelopmentConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,11 +12,12 @@ import org.springframework.context.annotation.Configuration;
  *
  * @author nath0
  */
+@DevelopmentConfiguration
 @Configuration
 public class MyConfiguration {
-    
+
     @Bean
-    public String applicationName(){
+    public String applicationName() {
         return "Sales System";
     }
 }
